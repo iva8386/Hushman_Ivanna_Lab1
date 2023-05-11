@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+    <title>Завдання №1</title>
+</head>
+<body>
+
+    <header>
+        <nav class = "container-menu" >
+            <img src = "icon.png" class = "menu icon">
+            <a href = "#1" class = "menu task1">Завдання №1</a>
+            <a href = "#2" class = "menu task2">Завдання №2</a>
+            <a href = "#3" class = "menu task3">Завдання №3</a>
+        </nav>
+    </header>
+
+    <body>  
+            
+            <div class = "container-overlay">
+                <div class = "overlay-photo">
+                    <img src="photo.jpeg">
+                    <p class = "overlayP">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Iste neque quaerat nihil minus fuga ipsa earum culpa aperiam,<br> voluptatibus dignissimos labore quibusdam officiis consectetur. Ab velit cumque illum aut possimus</p>
+                </div>
+            </div>
+
+            <p class = "task" id ="1">1. Перевести одні величини у інші за вибором ( кілометри, метри, сантиметри, дециметри,
+                міліметри)..</p>
+
+            <div class = "container">
+                <div class = "task1-container">
+                    <input type="number" id="value" placeholder="Введіть число" min = "0">
+
+                    <select id="from">
+                        <option value="kilometers">Кілометри</option>
+                        <option value="meters">Метри</option>
+                        <option value="centimeters">Сантиметри</option>
+                        <option value="decimeters">Дециметри</option>
+                        <option value="millimeters">Міліметри</option>
+                    </select>
+
+                    <p id = "into">В</p>
+
+                    <select id="to">
+                        <option value="kilometers">Кілометри</option>
+                        <option value="meters">Метри</option>
+                        <option value="centimeters">Сантиметри</option>
+                        <option value="decimeters">Дециметри</option>
+                        <option value="millimeters">Міліметри</option>
+                    </select>
+                    <button id="convert-btn">Перевести</button>
+                    <p id="result">0</p>
+                </div>
+            </div>
+
+            <p class = "task" id ="2">2. Суми прописом. Вводиться невід’ємне число ціле або з двома знаками після коми.<br>
+                Вивести прописом це число. Наприклад, 47 – сорок сім</p>
+            <div class = "container">
+                <div class = "task2-container">
+                    <input type="number" placeholder="Введіть число" min = "0" class="task2-input">
+                    <button class = "convert-btn2">Перевести</button>
+                    <p class = "convertedP">Введіть число</p>
+                </div>
+            </div>
+
+            <p class = "task 3" id ="3">3. Обчислити кількість символів у тексті.</p>
+            <div class = "container">
+                <div class = "task3-container">
+                    <textarea placeholder="Введіть текст" class="task3-input"></textarea>
+                    <button class = "count-btn3">Порахувати</button>
+                    <p class = "countP">Кількість символів в тексті: 0</p>
+                </div>
+            </div>
+
+    <footer>
+        <p>Made for Hushman Ivanna</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 
